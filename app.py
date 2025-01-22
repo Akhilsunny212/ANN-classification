@@ -54,7 +54,8 @@ input_data_scaled = scaler.transform(input_data)
 
 prediction=model.predict(input_data_scaled)
 pred_prob=prediction[0][0]
-st.write(pred_prob)d
+st.write(pred_prob)
+
 if pred_prob>0.5:
     st.write("customer is likely to churn")
 else:
