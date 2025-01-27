@@ -5,6 +5,7 @@ from sklearn.preprocessing import StandardScaler, LabelEncoder, OneHotEncoder
 import pandas as pd
 import pickle
 
+
 model=tf.keras.models.load_model('model.h5')
 
 with open('label_encoder_geo.pkl','rb') as file:
